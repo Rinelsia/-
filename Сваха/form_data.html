@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/bootstrap-grid.css">
+<!--    <link rel="stylesheet" href="static/basa.css">-->
+    <link rel="stylesheet" href="static/standart/css/style.css">
+    <link rel="stylesheet" href="static/basa_tmp.css">
+</head>
+<body>
+    <section class="login registration form_data">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto align-self-center">                    
+                    <form action="" method="post">
+                       <section>
+                           <p>Ввведите основные данные о себе</p> 
+                           <label for="m">м</label>
+                           <input id="m" name="pol" type="radio">
+                           <label for="f">ж</label>
+                           <input id="f" name="pol" type="radio"> 
+                           <input type="date">
+                       </section>
+                        <section>
+                          <p>Выбрите город и параметры:</p>
+                           <input id="gorod" type="text" placeholder="город">
+<!--                           <p>Введите ваши параметры:</p>-->
+                           <div class="row">
+                               <div class="col"><input type="number" max="300" min="50" placeholder="Рост"> </div>
+                               <div class="col">
+                                   <input type="number" min="35" max="180" placeholder="Вес">
+                               </div>    
+                           </div>
+<!--                           -->
+                       </section>
+                       <section>
+                           <p>Выбор семейных ценностей</p>
+                           <input name="family" id="f1" type="radio">
+                           <input name="family" id="f2" type="radio">
+                           <input name="family" id="f3" type="radio">
+                           <label for="f1">                              
+                               <div class="kv"></div>
+                               <span class="col">
+                                   <p>Семейная ценность 1. Традиционная</p>
+                               </span>
+                           </label>
+                           <label for="f2">
+                               <div class="kv"></div>
+                               <span class="col">
+                                   <p>Семейная ценность 2</p>
+                               </span>
+                           </label>
+                           <label for="f3">
+                               <div class="kv"></div>
+                               <span class="col">
+                                   <p>Семейная ценность 3</p>
+                               </span>
+                           </label>                           
+                       </section>
+                       <section>
+                           <input type="submit" value="Сохранить данные">
+                       </section>
+                    </form>
+                    <p>
+                        <a href="login.html">Вернуться ко входу</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

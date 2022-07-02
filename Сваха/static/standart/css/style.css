@@ -1,0 +1,29 @@
+/*Здсь будут прописываться стили настройки внешнего вида
+*Это стандартный стиль, доступн всем
+*/
+menu .style--nav-top #b2 ul{
+/*    background: linear-gradient(90deg, rgba(161,200,200), 51%,rgba(163,100,127, 0.0));*/
+/*    padding: 22pt 41pt;*/
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 0;
+}
+menu .style--nav-top #b1{
+/*    background: rgba(161,200,200);*/
+/*    background: linear-gradient(-90deg, rgba(161,200,200),80%, transparent);*/
+    padding-left: 9rem;
+}
+menu .ava{
+    background: rgba(161,200,200, 0.9);
+}
+/*--------------------*/
+nav #menu{
+    display: none;
+}
+nav #b1, #b2{
+    padding: 0;
+}
+menu nav .container{
+/*    border-bottom: 1.5px solid #444;*/
+/*    box-shadow: -3px 9px 5px -9px red;*/
+}

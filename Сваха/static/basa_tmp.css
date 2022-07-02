@@ -1,0 +1,212 @@
+menu{
+    position: fixed;
+    width: 50px;
+    padding: 0;
+    left: -1px;
+}
+menu nav[class="style--nav-top"]{ 
+    min-width: 1024px;
+    position: absolute;
+    z-index: 10;
+/*    padding: 1rem;*/
+/*    background: rgb(255,255,255);*/
+}
+menu nav .container{
+    margin-left: 0;
+}
+menu #menu{
+    position: absolute;
+    top:17%;
+    left: 38px;
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;    
+}
+/*----Аватарка------*/
+menu .style--nav-top .ava{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    background: #ddd;
+    overflow: hidden;
+    z-index: 100;
+    margin: 5px;
+}
+menu  #menu img{    
+    width: 40px;
+    height: 40px; 
+/*    padding: 5pt;*/
+}
+menu .style--nav-top #b1 svg{
+    height: 30px;
+    width: 30px;    
+}
+menu .style--nav-bottom svg{
+    height: 50px;
+    width: 50px;
+}
+menu nav[class="style--nav-bottom"]{ 
+    position: absolute;
+    top: 28vh;
+    left: 20px;
+}
+menu ul{    
+    position: relative;
+    z-index: 10;
+    left: 0;
+    float: left;    
+    margin-top:0;
+    width: 100%;
+/*    align-self: flex-start;*/
+}
+menu ul li{    
+    float: left;
+    list-style: none;
+    margin-left: 1rem;
+    margin-top: 10pt;
+}
+/*===================Страница входа*===================================*/
+.login .row{
+    height: 95vh;
+}
+.login input{
+    display: block; 
+    font-size: 16pt;
+    margin-bottom: 15px;
+    padding: 6pt 5pt;
+/*    width: 100%;*/
+}
+.login input[type="submit"]{
+    cursor: pointer;
+    float: left;    
+}
+.login form a{
+    margin-left: 35pt;
+    font-size: 16pt;
+    text-align: center;
+    vertical-align: -12pt;
+
+}
+.login form+p{
+    padding: 1rem;
+    text-align: center;
+}
+/*=========================Реегистрация========================*/
+.registration section{
+    position: relative;
+}
+.registration section input{
+        /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.registration section label,
+.registration section p
+{
+    font-size: 16pt;
+}
+.registration section p{
+    text-align: center;
+/*    margin-bottom: 10pt;*/
+}
+.registration form input[type="radio"]
+/*, .registration form input[type="number"]*/
+{
+/*    Отключение радлио кнопок*/
+/*    display: none;*/
+    display: inline;
+    width: 72pt;
+}
+.registration input[type="submit"]{
+    cursor: pointer;
+    float: none;    
+}
+/* Положение секций с формами ввода*/
+.registration section:nth-of-type(1){
+/*    left: -60vw;*/
+}
+
+/*-------------------------------------------------*/
+.registration form{
+    position: relative;
+/*    height: 200pt;*/
+}
+/*
+.registration form::before{
+    content: "";
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.registration form::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+*/
+/*
+.registration form input[type="radio"]:checked~label>p{
+    display: block;
+    font-size: 50pt;
+}
+*/
+/*====================Ввод персональных данных==================*/
+.form_data section{
+    position: absolute;
+    width: 100%;
+    height: 225pt;
+}
+.form_data section:nth-of-type(1){
+/*    top: -162pt;*/
+/*    left: -60vw;*/
+}
+/*-----------------*/
+.form_data section:nth-of-type(2){
+/*    top: -322pt;*/
+    left: -70vw;
+}
+.form_data section:nth-of-type(2) .row,
+.col
+{
+    height: fit-content;
+}
+.form_data section:nth-of-type(3){
+/*    top: 0pt;*/
+    position: relative;
+    left: -60vw; 
+    width: 100%;
+}
+.form_data section:nth-of-type(4){
+    top: 172pt;
+    position: absolute;
+/*    left: -60vw;*/
+}
+/*=================Кнопки радио ввода выбора семейных ценностей=================================*/
+.form_data form section:nth-of-type(3) input{
+    display: none;
+}
+.form_data form section:nth-of-type(3) label{    
+    margin: 1px;
+    padding: 1px;   
+    display: flex;
+    align-items: center;
+}
+.form_data form section:nth-of-type(3) label .kv{
+    height: 20px;
+    width: 20px;
+    border: solid 1px #222;
+    cursor: pointer;
+/*    float: left;*/
+    margin-right: 1rem;
+    
+}
+.form_data form:nth-child(1) section:nth-of-type(3) input[id="f1"]:checked~label[for="f1"] .kv,
+.form_data form section:nth-of-type(3) input[id="f2"]:checked~label[for="f2"] .kv,
+.form_data form section:nth-of-type(3) input[id="f3"]:checked~label[for="f3"] .kv
+{
+/*    color: gold;*/
+/*    margin-left: 100px;*/
+    background-color: #222;
+}
